@@ -1,0 +1,18 @@
+{
+  "name": "flatten-array",
+  "version": "0.0.0",
+  "description": "Flattens nested arrays.",
+  "main": "index.js",
+  "scripts": {
+    "test": "fox"
+  },
+  "devDependencies": {
+    "fox": "*"
+  },
+  "repository": {
+    "url": "git@github.com:azer\/flatten-array.git",
+    "type": "git"
+  },
+  "author": "Azer Ko\u00e7ulu <azer@kodfabrik.com>",
+  "license": "BSD"
+}
