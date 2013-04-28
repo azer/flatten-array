@@ -10,7 +10,7 @@ $ npm install flatten-array
 
 ### Usage
 
-``js
+```js
 flatten = require('flatten-array')
 
 flatten([1, 2, [3, [4, 5], 6], 7])
