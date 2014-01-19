@@ -1,21 +1,21 @@
 module.exports = flatten;
 
-function flatten(list){
-  var result;
-
+function flatten (list, result) {
   if(!Array.isArray(list)) return list;
 
-  result = [];
+  var i = -1;
+  var len = list.length;
 
-  list.forEach(function(el){
+  result || (result = []);
 
-    if(!Array.isArray(el)) {
-       return result.push(el);
+  while (++i < len) {
+    if (!Array.isArray(list[i])) {
+      result.push(list[i]);
+      continue;
     }
 
-    result.push.apply(result, flatten(el));
-
-  });
+    flatten(list[i], result);
+  }
 
   return result;
 }
