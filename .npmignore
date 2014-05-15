@@ -1,5 +1,7 @@
-test
+# config
+.gitignore
+.travis.yml
+.npmignore
+
+# tests
 test.js
-docs
-example
-examples
