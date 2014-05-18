@@ -1,7 +1,7 @@
+var test = require("prova");
 var flatten = require("./");
 
-it('flattens arrays', function(){
-
-  expect(flatten([1, [2, [3, 4], 5], 6])).to.deep.equal([1, 2, 3, 4, 5, 6]);
-
+test('flattens arrays', function (assert) {
+  assert.plan(1);
+  assert.deepEqual(flatten([1, [2, [3, 4], 5], 6]), [1, 2, 3, 4, 5, 6]);
 });
