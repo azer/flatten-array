@@ -5,13 +5,13 @@ flattens nested arrays.
 ### Install
 
 ```bash
-$ npm install flatten-array
+$ npm install azer/flatten-array
 ```
 
 ### Usage
 
 ```js
-flatten = require('flatten-array')
+var flatten = require('flatten-array')
 
 flatten([1, 2, [3, [4, 5], 6], 7])
 // => [1, 2, 3, 4, 5, 6, 7]
